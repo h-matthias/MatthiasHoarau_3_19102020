@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    padding: 4rem;
+    background-color:$color-footer;
+    display: flex;
+    flex-direction: column;
+    line-height: 4rem;
+    &__logo{
+        margin-bottom: 3rem;
+    }
+    &__logo, a, i{
+        color: #ffffff;
+    }
+
+}
+.footer i{
+    margin-right: 1rem;
+}
+.fa-hands-helping{
+    font-size: 1.5rem;
+}

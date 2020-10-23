@@ -1,0 +1,25 @@
+.info{
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__position{
+        box-shadow: inset grey 0px 6px 6px -5px;
+        background-color: #eaeaea;
+        padding: 2rem;
+        & > i{
+            margin-right: 1rem;
+        }
+    }
+    &__desc{
+        padding: 20px;
+        &--grow-bolt{
+            font-size: map-get( $size-text, text)*1.8;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+    }
+    &__btn{
+        padding-bottom: 4rem;
+    }
+}

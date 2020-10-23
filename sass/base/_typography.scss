@@ -1,0 +1,21 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.resto__name{
+    font-family: 'Shrikhand', cursive;
+    font-size: map-get( $size-text, resto)
+}
+
+.header__logo{
+    font-family: 'Shrikhand', cursive;
+    font-size: map-get($size-text, logo)
+}
+.footer__logo{
+    font-family: 'Shrikhand', cursive;
+    font-size: map-get($size-text, logo) - 1rem;
+}
+
+p{
+    font-size: map-get( $size-text, text);
+}
