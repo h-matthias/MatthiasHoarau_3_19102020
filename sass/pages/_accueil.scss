@@ -18,8 +18,58 @@
             font-weight: bold;
             padding-bottom: 10px;
         }
+        & p:nth-child(2){
+            color: grey;
+            font-size: 1.8rem;
+        }
     }
     &__btn{
-        padding-bottom: 4rem;
+        margin: 4rem 0 8rem 0;
     }
+}
+
+.fonct{
+    margin: 4rem 0;
+    padding: 0 2rem;
+    &__titre{
+        font-size: 3rem;
+        font-weight: bold;
+    }&__ordre{
+        &__box{
+            display: flex;
+            align-items:center;
+            justify-content: flex-start;
+            width: 100%;
+            background-color: $color-background;
+            height: 7rem;
+            margin: 1.8rem 0;
+            border-radius: 1.8rem;
+            &:hover {
+                background-color:lighten($color: $color-primary, $amount: 35) ;
+            }
+        }
+        &__number{
+            position: relative;
+            left: -1rem;
+            padding: .4rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            text-align: center;
+            background-color: $color-primary;
+            color: $color-background;
+            border-radius: 15px;
+            
+        }
+        &__icon{
+            margin:0 1.8rem;
+            color: darken($color: $color-background, $amount: 35);
+            &:hover{
+                color: $color-primary;
+            }
+        }
+        &__info{
+            font-weight: bold;
+        }
+    }
+    
 }
