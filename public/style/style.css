@@ -52,8 +52,10 @@ p {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
+  box-shadow: grey 0px 5px 15px;
 }
 
+/* parti header + bouton return */
 .header {
   position: relative;
   display: flex;
@@ -67,9 +69,10 @@ p {
   left: 4rem;
 }
 
+/* partie footer des paages du site */
 .footer {
   width: 100%;
-  padding: 4rem;
+  padding: 2rem;
   background-color: #353535;
   display: flex;
   flex-direction: column;
@@ -90,6 +93,7 @@ p {
   font-size: 1.5rem;
 }
 
+/* parti information et position */
 .info {
   background-color: #f6f6f6;
   display: flex;
@@ -100,6 +104,7 @@ p {
   box-shadow: inset grey 0px 6px 6px -5px;
   background-color: #eaeaea;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 .info__position > i {
   margin-right: 1rem;
@@ -120,9 +125,9 @@ p {
   margin: 4rem 0 8rem 0;
 }
 
+/* description fontionement du site */
 .fonct {
-  margin: 4rem 0;
-  padding: 0 2rem;
+  padding: 6rem 2rem;
 }
 .fonct__titre {
   font-size: 3rem;
@@ -135,11 +140,15 @@ p {
   width: 100%;
   background-color: #f6f6f6;
   height: 7rem;
-  margin: 1.8rem 0;
+  margin: 2.8rem 0;
   border-radius: 1.8rem;
+  box-shadow: grey 1px 1px 10px;
 }
 .fonct__ordre__box:hover {
   background-color: #f2eafb;
+}
+.fonct__ordre__box:hover > i {
+  color: #9356DC;
 }
 .fonct__ordre__number {
   position: relative;
@@ -156,11 +165,57 @@ p {
   margin: 0 1.8rem;
   color: #9d9d9d;
 }
-.fonct__ordre__icon:hover {
-  color: #9356DC;
-}
 .fonct__ordre__info {
   font-weight: bold;
+  color: black !important;
+}
+
+/* section resto */
+.resto {
+  padding: 4rem 2rem;
+  background-color: #f6f6f6;
+}
+
+/* Carte visuel des restos */
+.prev-resto {
+  display: inline-block;
+  position: relative;
+  margin: 1rem 0;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: grey 1px 1px 10px;
+}
+.prev-resto__cont {
+  height: 70%;
+}
+.prev-resto__cont__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.prev-resto__info {
+  padding: 2rem;
+  position: relative;
+  background-color: white;
+}
+.prev-resto__info__titre {
+  font-size: 2rem;
+}
+.prev-resto__info__heart {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+.prev-resto__new {
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 1rem;
+  background-color: #99E2D0;
+  color: #278870;
 }
 
 /*# sourceMappingURL=style.css.map */
