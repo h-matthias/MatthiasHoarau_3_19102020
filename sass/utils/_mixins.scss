@@ -1,9 +1,14 @@
 @mixin btn {
     padding: 20px;
+    margin: auto;
     height: 100%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: white;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 30px;
-    box-shadow: grey 0px 5px 15px ;
+    box-shadow: grey 0px 1px 5px ;
+    &:hover{
+        background: linear-gradient(lighten($color: $color-secondary, $amount: 5 ), lighten($color: $color-primary, $amount: 5 ));
+        box-shadow: grey 1px 3px 12px ;
+    }
 }

@@ -1,15 +1,15 @@
+@import "./base/base";
+
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animation";
 
-
-@import "./base/base";
 @import "./base/typography";
 
 @import "./components/bouton";
 
 @import "./layouts/header";
-
 @import "./layouts/footer";
 
-
 @import "./pages/accueil";
+@import "./pages/plat-resto";
