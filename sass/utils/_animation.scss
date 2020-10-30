@@ -96,6 +96,12 @@
     }
 }
 
+
+/* deplacement de la coche des menu */
+.box-plat:hover i{
+    /* declanche l'animation rotation de l'icone */
+    animation: rotateok 0.4s linear 1 ; 
+}
 /* rotation icone ok */
 @keyframes rotateok{
     0%{
@@ -107,16 +113,15 @@
 }
 
 
-
-/* deplacement de la coche des menu */
-.box-plat:hover i{
-    /* declanche l'animation rotation de l'icone */
-    animation: rotateok 0.4s linear 1 ; 
-}
 .box-plat:hover .plat__ok{
-        animation: depgauche 0.4s linear 1;
+        animation: depgauche 0.4s linear 1 both;
 }
 
 @keyframes depgauche{
-    
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 7rem;
+    }
 }
