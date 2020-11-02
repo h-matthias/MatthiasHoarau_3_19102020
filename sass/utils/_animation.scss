@@ -74,25 +74,20 @@
 
 /* Animation pour les coeur */
 .fa-heart:hover{
-    cursor: pointer;
-    animation: boldheart .8s ease-in-out 1 both;
+    //cursor: pointer;
+    animation: anim-heart 1s linear 1 both;
 }
 
-@keyframes boldheart{
+@keyframes anim-heart{
     0%{
-        opacity: 0;
+        color: $color-background;
     }
-    10%{
-        opacity: .5;
-        color: $color-primary;
-    }
-    50%{
-        opacity: 1;
-        font-weight: bold;
+    20%{
+        -webkit-text-stroke: transparent;
     }
     100%{
-        color: $color-primary;
-        font-weight:bold;  
+        color: transparent;
+        -webkit-text-stroke: transparent;    
     }
 }
 

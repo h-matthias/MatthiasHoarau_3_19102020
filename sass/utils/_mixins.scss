@@ -12,3 +12,14 @@
         box-shadow: grey 1px 3px 12px ;
     }
 }
+
+@mixin heart {
+    cursor: pointer;
+    font-weight: 900!important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to bottom left, $color-primary, $color-secondary);
+    color: $color-background;
+    -webkit-text-stroke: 1px black;
+    position: absolute;
+}
