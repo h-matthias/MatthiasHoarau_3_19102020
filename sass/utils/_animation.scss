@@ -107,7 +107,6 @@
     }
 }
 
-
 .box-plat:hover .plat__ok{
         animation: depgauche 0.4s linear 1 both;
 }
@@ -118,5 +117,33 @@
     }
     100%{
         width: 7rem;
+    }
+}
+/* Annimation du defilement des plat des menu */
+
+.box-plat{
+    animation: defilement 0.5s ease-in 1 both;
+}
+// boucle creation de regle animation-delay +ingrementation 0.2s
+//initialisation varible pour la boucle
+$anim-delai:0s;
+//boucle for avec commence a 3 fini a 6(4enfant)
+@for $i from 3 through 6{
+    .box-plat:nth-child(#{$i}){
+        animation-delay: $anim-delai ;
+    }
+    //ingremente la variable
+    $anim-delai:$anim-delai + 0.2;
+}
+
+@keyframes defilement{
+    0%{
+        bottom:-20px;
+        
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+
     }
 }

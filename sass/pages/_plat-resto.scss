@@ -46,6 +46,8 @@
     }
 }//end type-plat
 .box-plat{
+    position: relative;
+    opacity: 0;
     width: 100%;
     margin-bottom: 2rem;
     display: flex;
@@ -53,7 +55,6 @@
     border-radius: 15px;
     box-shadow: grey 1px 1px 10px ;
     overflow: hidden;
-    
 }
 .plat{
     display: flex;
