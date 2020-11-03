@@ -11,7 +11,7 @@
 }
 .lettre{
     margin-bottom: 100px;
-    animation: chargement 1s linear 5;
+    animation: chargement 1s linear  5 ;
     color: $color-tertiary;
 }
 /* animation changement de couleur */
@@ -30,30 +30,18 @@
 
 }
 /* animation du delay des lettre */
-.lettre:nth-child(1){
-    animation-delay: 0.1s;
+// boucle creation de regle animation-delay +incrementation 0.1s
+//initialisation varible pour la boucle au depart de -0.8s
+$delai-lettre:-0.8s;
+//boucle for avec commence a 1 fini a 8
+@for $i from 1 through 8{
+    .lettre:nth-child(#{$i}){
+        animation-delay: $delai-lettre ;
+    }
+    //incremente la variable
+    $delai-lettre:$delai-lettre +0.1;
 }
-.lettre:nth-child(2){
-    animation-delay: 0.2s;
-}
-.lettre:nth-child(3){
-    animation-delay: 0.3s;
-}
-.lettre:nth-child(4){
-    animation-delay: 0.4s;
-}
-.lettre:nth-child(5){
-    animation-delay: 0.5s;
-}
-.lettre:nth-child(6){
-    animation-delay: 0.6s;
-}
-.lettre:nth-child(7){
-    animation-delay: 0.7s;
-}
-.lettre:nth-child(8){
-    animation-delay: 0.8s;
-}
+
 /* animation pour retirer le load spinner de l'ecran */
 @keyframes exit{
     0%{
@@ -124,7 +112,7 @@
 .box-plat{
     animation: defilement 0.5s ease-in 1 both;
 }
-// boucle creation de regle animation-delay +ingrementation 0.2s
+// boucle creation de regle animation-delay +incrementation 0.2s
 //initialisation varible pour la boucle
 $anim-delai:0s;
 //boucle for avec commence a 3 fini a 6(4enfant)
@@ -132,7 +120,7 @@ $anim-delai:0s;
     .box-plat:nth-child(#{$i}){
         animation-delay: $anim-delai ;
     }
-    //ingremente la variable
+    //incremente la variable
     $anim-delai:$anim-delai + 0.2;
 }
 
