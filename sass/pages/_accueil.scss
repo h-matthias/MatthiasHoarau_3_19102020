@@ -16,7 +16,7 @@
     &__desc{
         padding: 20px;
         &--grow-bolt{
-            font-size: map-get( $size-text, text)*1.8;
+            font-size: 1.8rem;
             font-weight: bold;
             padding-bottom: 1rem;
         }
@@ -64,8 +64,7 @@
             text-align: center;
             background-color: $color-primary;
             color: $color-background;
-            border-radius: 15px;
-            
+            border-radius: 15px;  
         }
         &__icon{
             margin:0 1.8rem;
@@ -118,7 +117,7 @@
         position: absolute;
         top: 5%;
         right: 5%;
-        padding: 1rem;
+        padding: .5rem;
         background-color:$color-tertiary;
         color: darken($color: $color-tertiary , $amount: 40);
     }// endnew

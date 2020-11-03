@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .cont__info__name{
     font-family: 'Shrikhand', cursive;
@@ -20,13 +20,12 @@ body{
 
 .header__logo{
     font-family: 'Shrikhand', cursive;
-    font-size: map-get($size-text, logo)
+    font-size: 3rem;
 }
 .footer__logo{
     font-family: 'Shrikhand', cursive;
-    font-size: map-get($size-text, logo) - 1rem;
+    font-size: 2rem;
 }
-
 p{
-    font-size: map-get( $size-text, text);
+    font-size: 1.6rem;
 }
