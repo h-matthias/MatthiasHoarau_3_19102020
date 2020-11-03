@@ -36,16 +36,29 @@
     &__titre{
         font-size: 3rem;
         font-weight: bold;
+        margin-bottom: 1.6rem;
     }//end titre
     &__ordre{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        @include desktop{
+            justify-content: space-around;
+        }
         &__box{
             display: flex;
             align-items:center;
             justify-content: flex-start;
             width: 100%;
+            @include tablette{
+               max-width: 270px; 
+            }
+            @include desktop{
+                max-width: 300px;
+            }
             background-color: $color-background;
             height: 7rem;
-            margin: 2.8rem 0;
+            margin: 1.4rem 0.4rem;
             border-radius: 1.8rem;
             box-shadow: grey 1px 1px 10px ;
             &:hover {
@@ -81,13 +94,21 @@
 .resto{
     padding: 4rem 2rem;
     background-color: $color-background;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__titre{
+        margin-bottom: 1.2rem;
+        width: 100%;
+    }
 }
 /* Carte visuel des restos */
 .prev-resto{
     display: inline-block;
     position: relative;
-    margin: 1rem 0;
+    margin: 1.4rem 0.2rem;
     width: 100%;
+    max-width: 300px;
     height: 250px;
     border-radius: 20px;
     overflow: hidden;

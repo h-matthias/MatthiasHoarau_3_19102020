@@ -6,12 +6,22 @@
     display: flex;
     flex-direction: column;
     line-height: 3rem;
+    @include tablette{
+        flex-flow: row wrap;
+    }
+    @include desktop{
+        flex-flow: row wrap;
+    }
     &__logo{
+        width: 100%;
         font-weight: 500;
         margin-bottom: 2rem;
     }
     &__logo, a, i{
         color: #ffffff;
+    }
+    & a{
+        margin-right: 2rem;
     }
 
 }
