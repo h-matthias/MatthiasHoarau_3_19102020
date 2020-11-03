@@ -30,7 +30,7 @@ ol {
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: exit 3s linear 1;
+  animation: exit 3s linear 1 both;
 }
 
 .lettre {
@@ -55,35 +55,35 @@ ol {
 }
 /* animation du delay des lettre */
 .lettre:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: -0.8s;
 }
 
 .lettre:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: -0.7s;
 }
 
 .lettre:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: -0.6s;
 }
 
 .lettre:nth-child(4) {
-  animation-delay: 0.4s;
+  animation-delay: -0.5s;
 }
 
 .lettre:nth-child(5) {
-  animation-delay: 0.5s;
+  animation-delay: -0.4s;
 }
 
 .lettre:nth-child(6) {
-  animation-delay: 0.6s;
+  animation-delay: -0.3s;
 }
 
 .lettre:nth-child(7) {
-  animation-delay: 0.7s;
+  animation-delay: -0.2s;
 }
 
 .lettre:nth-child(8) {
-  animation-delay: 0.8s;
+  animation-delay: -0.1s;
 }
 
 /* animation pour retirer le load spinner de l'ecran */
@@ -129,7 +129,7 @@ ol {
 /* rotation icone ok */
 @keyframes rotateok {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(360deg);
@@ -140,11 +140,8 @@ ol {
 }
 
 @keyframes depgauche {
-  0% {
-    width: 0;
-  }
   100% {
-    width: 7rem;
+    margin-right: 0;
   }
 }
 /* Annimation du defilement des plat des menu */
@@ -179,7 +176,7 @@ ol {
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .cont__info__name {
@@ -210,7 +207,7 @@ body {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .btn {
@@ -260,13 +257,28 @@ p {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  line-height: 4rem;
+  line-height: 3rem;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .footer {
+    flex-flow: row wrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-flow: row wrap;
+  }
 }
 .footer__logo {
-  margin-bottom: 3rem;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 .footer__logo, .footer a, .footer i {
   color: #ffffff;
+}
+.footer a {
+  margin-right: 2rem;
 }
 
 .footer i {
@@ -274,7 +286,7 @@ p {
 }
 
 .fa-hands-helping {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* parti information et position */
@@ -297,7 +309,7 @@ p {
   padding: 20px;
 }
 .info__desc--grow-bolt {
-  font-size: 2.7rem;
+  font-size: 1.8rem;
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -316,6 +328,17 @@ p {
 .fonct__titre {
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+.fonct__ordre {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+}
+@media screen and (min-width: 1024px) {
+  .fonct__ordre {
+    justify-content: space-around;
+  }
 }
 .fonct__ordre__box {
   display: flex;
@@ -324,9 +347,19 @@ p {
   width: 100%;
   background-color: #f6f6f6;
   height: 7rem;
-  margin: 2.8rem 0;
+  margin: 1.4rem 0.4rem;
   border-radius: 1.8rem;
   box-shadow: grey 1px 1px 10px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .fonct__ordre__box {
+    max-width: 270px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fonct__ordre__box {
+    max-width: 300px;
+  }
 }
 .fonct__ordre__box:hover {
   background-color: #f2eafb;
@@ -358,14 +391,22 @@ p {
 .resto {
   padding: 4rem 2rem;
   background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.resto__titre {
+  margin-bottom: 1.2rem;
+  width: 100%;
 }
 
 /* Carte visuel des restos */
 .prev-resto {
   display: inline-block;
   position: relative;
-  margin: 1rem 0;
+  margin: 1.4rem 0.2rem;
   width: 100%;
+  max-width: 300px;
   height: 250px;
   border-radius: 20px;
   overflow: hidden;
@@ -396,7 +437,7 @@ p {
   position: absolute;
   top: 5%;
   right: 5%;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #99E2D0;
   color: #278870;
 }
@@ -409,11 +450,21 @@ p {
   justify-content: center;
   padding-bottom: 3rem;
 }
+@media screen and (min-width: 1024px) {
+  .menu {
+    flex-flow: row wrap;
+  }
+}
 
 /* contener image resto pour les page menu des resto*/
 .cont {
   width: 100%;
   height: 250px;
+}
+@media screen and (min-width: 1024px) {
+  .cont {
+    width: 100%;
+  }
 }
 .cont__img {
   width: 100%;
@@ -436,7 +487,12 @@ p {
 
 .type-plat {
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .type-plat {
+    max-width: 340px;
+  }
 }
 .type-plat__name {
   padding-bottom: 0.2rem;
@@ -463,36 +519,44 @@ p {
 .plat {
   display: flex;
   flex-flow: row wrap;
+  align-items: baseline;
   align-content: space-around;
   justify-content: space-between;
   width: 100%;
+  min-width: 200px;
   height: 60px;
   padding: 0.5rem;
-  text-overflow: ellipsis;
 }
 .plat__name {
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 1.6rem;
 }
 .plat__info {
+  width: 88%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: 300;
   font-size: 1.2rem;
 }
+.plat__prix {
+  width: 10%;
+  margin-right: 0.2rem;
+}
 .plat__ok {
-  display: flex;
-  width: 0px;
-  height: 60px;
+  margin-right: -150px;
+  width: 8rem;
+  height: 6rem;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
 }
 .plat__ok i {
-  font-size: 2.8rem;
-  margin: auto;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 3rem;
   color: #99E2D0;
   background-color: white;
   border-radius: 50%;
