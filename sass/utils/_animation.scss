@@ -88,7 +88,7 @@ $delai-lettre:-0.8s;
 /* rotation icone ok */
 @keyframes rotateok{
     0%{
-        transform: rotate(0deg);
+        transform: rotate(-360deg);
     }
     100%{
         transform: rotate(360deg);
@@ -98,17 +98,13 @@ $delai-lettre:-0.8s;
 .box-plat:hover .plat__ok{
         animation: depgauche 0.4s linear 1 both;
 }
-
 @keyframes depgauche{
-    0%{
-        width: 0;
-    }
     100%{
-        width: 7rem;
+        margin-right: 0;
     }
 }
-/* Annimation du defilement des plat des menu */
 
+/* Annimation du defilement des plat des menu */
 .box-plat{
     animation: defilement 0.5s ease-in 1 both;
 }

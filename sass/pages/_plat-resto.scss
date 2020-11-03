@@ -34,7 +34,7 @@
 
 .type-plat{
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 1rem;
     &__name{
         padding-bottom: .2rem;
     }
@@ -59,42 +59,45 @@
 .plat{
     display: flex;
     flex-flow: row wrap ;
+    align-items: baseline;
     align-content: space-around; 
     justify-content: space-between;
     width: 100%;
+    min-width: 200px;
     height: 60px;
     padding: .5rem;
-    text-overflow: ellipsis;
     &__name{
+        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
         font-size: 1.6rem;
-        
     }
     &__info{
+        width: 88%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         font-weight: 300;
-        font-size: 1.2rem;
-        
+        font-size: 1.2rem;  
+    }
+    &__prix{
+        width: 10%;
+        margin-right: .2rem;
     }
     &__ok{
-        display: flex;
-       
-        width: 0px;
-        height: 60px;
+        margin-right: -150px;
+        width: 8rem;
+        height: 6rem;
         border-radius: 0 15px 15px 0;
         background-color: $color-tertiary;
-        //padding: 1.6rem 2rem;
         & i{
-            font-size: 2.8rem;
-            margin: auto;
-            color: $color-tertiary ;
-            background-color: white;
-            border-radius: 50%; 
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 3rem;
+            color: $color-tertiary;
+            background-color:white;
+            border-radius: 50%;
         }//end i
     }//end ok
    
