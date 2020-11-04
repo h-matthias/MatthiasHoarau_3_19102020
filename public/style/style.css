@@ -113,11 +113,11 @@ ol {
     color: #f6f6f6;
   }
   20% {
-    -webkit-text-stroke: transparent;
+    -webkit-text-stroke-color: transparent;
   }
   100% {
     color: transparent;
-    -webkit-text-stroke: transparent;
+    -webkit-text-stroke-color: transparent;
   }
 }
 /* deplacement de la coche des menu */
@@ -301,6 +301,7 @@ p {
   background-color: #eaeaea;
   padding: 2rem;
   margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 .info__position > i {
   margin-right: 1rem;

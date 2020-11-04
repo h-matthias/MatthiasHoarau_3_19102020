@@ -71,11 +71,11 @@ $delai-lettre:-0.8s;
         color: $color-background;
     }
     20%{
-        -webkit-text-stroke: transparent;
+        -webkit-text-stroke-color: transparent;
     }
     100%{
         color: transparent;
-        -webkit-text-stroke: transparent;    
+        -webkit-text-stroke-color: transparent;    
     }
 }
 
