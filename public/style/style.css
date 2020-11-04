@@ -454,6 +454,7 @@ p {
 @media screen and (min-width: 1024px) {
   .menu {
     flex-flow: row wrap;
+    justify-content: space-around;
   }
 }
 
@@ -473,6 +474,8 @@ p {
   object-fit: cover;
 }
 .cont__info {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
@@ -480,10 +483,21 @@ p {
   height: 30%;
   padding: 2.6rem 2rem 0;
 }
+@media screen and (min-width: 1024px) {
+  .cont__info {
+    display: flex;
+    justify-content: center;
+  }
+}
 .cont__info__heart {
-  right: 2rem;
-  top: 3.1rem;
+  position: relative;
   font-size: 2.4rem;
+  bottom: -5px;
+}
+@media screen and (min-width: 1024px) {
+  .cont__info__heart {
+    margin-left: 4rem;
+  }
 }
 
 .type-plat {
@@ -492,7 +506,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .type-plat {
-    max-width: 340px;
+    min-width: 330px;
+    width: 33%;
   }
 }
 .type-plat__name {
