@@ -427,10 +427,14 @@ p {
   background-color: white;
 }
 .prev-resto__info__titre {
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+.prev-resto__info__line {
+  font-weight: 300;
 }
 .prev-resto__info__heart {
-  right: 5%;
+  font-size: 2rem;
+  right: 10%;
   top: 35%;
 }
 .prev-resto__new {

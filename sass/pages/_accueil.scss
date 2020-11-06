@@ -127,10 +127,14 @@
         position: relative;
         background-color: white;
         &__titre{
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+        &__line{
+            font-weight: 300;
         }
         &__heart{
-            right: 5%;
+            font-size: 2rem;
+            right: 10%;
             top: 35%;
         }
     }//end info
