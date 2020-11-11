@@ -104,7 +104,7 @@
     }
     &__prix{
         width: 10%;
-        margin-right: .2rem;
+        margin-right: .3rem;
     }
     &__ok{
         margin-right: -150px;
@@ -113,12 +113,11 @@
         border-radius: 0 15px 15px 0;
         background-color: $color-tertiary;
         & i{
+            font-weight: 900;
             margin-top: 15px;
-            margin-left: 10px;
+            margin-left: 15px;
             font-size: 3rem;
-            color: $color-tertiary;
-            background-color:white;
-            border-radius: 50%;
+            color: white;
         }//end i
     }//end ok
    

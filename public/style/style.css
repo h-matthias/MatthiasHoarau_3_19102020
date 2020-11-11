@@ -229,7 +229,6 @@ p {
   cursor: pointer;
   font-weight: 900 !important;
   -webkit-background-clip: text;
-  background-clip: text;
   background-image: linear-gradient(to bottom left, #9356DC, #FF79DA);
   color: #f6f6f6;
   -webkit-text-stroke: 1px black;
@@ -564,7 +563,7 @@ p {
 }
 .plat__prix {
   width: 10%;
-  margin-right: 0.2rem;
+  margin-right: 0.3rem;
 }
 .plat__ok {
   margin-right: -150px;
@@ -574,12 +573,11 @@ p {
   background-color: #99E2D0;
 }
 .plat__ok i {
+  font-weight: 900;
   margin-top: 15px;
-  margin-left: 10px;
+  margin-left: 15px;
   font-size: 3rem;
-  color: #99E2D0;
-  background-color: white;
-  border-radius: 50%;
+  color: white;
 }
 
 .marg-btn {
