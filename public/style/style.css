@@ -15,12 +15,15 @@ a {
 
 .contener {
   width: 100%;
-  max-width: 1440px;
-  margin: auto;
 }
 
 ol {
   list-style-type: none;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
 }
 
 /* Animation du load spinner */
