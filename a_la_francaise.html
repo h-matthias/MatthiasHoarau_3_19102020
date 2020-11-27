@@ -9,15 +9,18 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/42d9a76aa4.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="./public/style/style.css">
+    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
     <title>Restaurant à la française</title>
 </head>
 
 <body>
     <!-- header et bouton retour -->
     <header class="header">
-        <a class="header__return" href="./index.html">
-            <i class="fas fa-arrow-left"></i>
-        </a>
+        <nav class="header__return">
+            <a href="./index.html">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </nav>
         <h1 class="header__logo">
             ohmyfood
         </h1>
@@ -214,21 +217,27 @@
     </div>
     <!-- Footer -->
     <footer class="footer">
-        <h1 class="footer__logo">
-            ohmyfood
-        </h1>
-        <a href="#">
-            <i class="fas fa-utensils"></i>
-            Proposer un restaurants
-        </a>
-        <a href="#">
-            <i class="fas fa-hands-helping"></i>
-            Devenir partenaire
-        </a>
-        <a href="#">
-            Mentions légales
-        </a>
-        <a href="mailto:contact@ohmyfood.fr">Contact</a>
+        <h2 class="footer__logo">ohmyfood</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fas fa-utensils"></i>
+                    Proposer un restaurant
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-hands-helping"></i>
+                    Devenir partenaire
+                </a>
+            </li>
+            <li>
+                <a href="#"> Mentions légales </a>
+            </li>
+            <li>
+                <a href="mailto:contact@ohmyfood.fr">Contact</a>
+            </li>
+        </ul>
     </footer>
 
 </body>

@@ -15,6 +15,8 @@ a {
 
 .contener {
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 ol {
@@ -254,17 +256,19 @@ p {
   width: 100%;
   padding: 2rem;
   background-color: #353535;
-  display: flex;
-  flex-direction: column;
   line-height: 3rem;
 }
+.footer ul {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  .footer {
+  .footer ul {
     flex-flow: row wrap;
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer {
+  .footer ul {
     flex-flow: row wrap;
   }
 }
@@ -279,6 +283,12 @@ p {
 .footer a {
   margin-right: 2rem;
 }
+.footer a:hover {
+  color: #9356DC;
+}
+.footer a:hover > i {
+  color: #9356DC;
+}
 
 .footer i {
   margin-right: 1rem;
@@ -286,6 +296,10 @@ p {
 
 .fa-hands-helping {
   font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
 }
 
 /* parti information et position */
