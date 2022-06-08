@@ -13,15 +13,17 @@ a{
     color: initial;
 }
 
-.contener{
+.container{
+    max-width: 1440px;
+    justify-self: center;
     width: 100%;
-    
 }
 
 ol{
     list-style-type : none;
 }
 body{
-    max-width: 1440px;
-    margin: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }

@@ -1,245 +1,195 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Composez votre menu dans le restaurant la palette du goût, et commander votre repas."
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/42d9a76aa4.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./public/style/style.css" />
+		<link
+			rel="shortcut icon"
+			href="public/images/favicon.ico"
+			type="image/x-icon"
+		/>
+		<title>Restaurant la palette du goût</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Composez votre menu dans le restaurant la palette du goût, et commander votre repas.">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/42d9a76aa4.js" crossorigin="anonymous"></script>   
-    <link rel="stylesheet" href="./public/style/style.css">
-    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
-    <title>Restaurant la palette du goût</title>
-</head>
+	<body>
+		<div class="container">
+			<!-- header et bouton retour -->
+			<header class="header">
+				<nav class="header__return">
+					<a href="./index.html">
+						<i class="fas fa-arrow-left"></i>
+					</a>
+				</nav>
+				<h1 class="header__logo">ohmyfood</h1>
+			</header>
+			<!-- Menu des restaurants -->
+			<div class="menu">
+				<figure class="cont">
+					<img
+						class="cont__img"
+						src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+						alt="restaurants la palette du goût"
+					/>
+					<figcaption class="cont__info">
+						<h2 class="cont__info__name">La palette du goût</h2>
+						<i class="cont__info__heart far fa-heart"></i>
+					</figcaption>
+				</figure>
 
-<body>
-    <!-- header et bouton retour -->
-    <header class="header">
-        <nav class="header__return">
-            <a href="./index.html">
-                <i class="fas fa-arrow-left"></i>
-            </a>
-        </nav>
-        <h1 class="header__logo">
-            ohmyfood
-        </h1>
-    </header>
-    <!-- Menu des restaurants -->
-    <div class="menu">
-        <figure class="cont">
-            <img class="cont__img" src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="restaurants la palette du goût">
-            <figcaption class="cont__info">
-                <h2 class="cont__info__name">
-                    La palette du goût
-                </h2>
-                    <i class="cont__info__heart far fa-heart"></i>
-            </figcaption>
-        </figure>
+				<!-- menu des entrées -->
+				<section class="type-plat">
+					<h3 class="type-plat__name">Entrées</h3>
+					<div class="type-plat__underline"></div>
 
-        <!-- menu des entrées -->
-        <section class="type-plat">
-            <h3 class="type-plat__name">
-                Entrées
-            </h3>
-            <div class="type-plat__underline"></div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Fricassée d'escargot</h4>
+							<p class="plat__info">Au piment d'espelette</p>
+							<p class="plat__prix">25€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
 
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Fricassée d'escargot
-                    </h4>
-                    <p class="plat__info">
-                        Au piment d'espelette
-                    </p>
-                    <p class="plat__prix">
-                        25€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Foie gras de canard mi-cuit</h4>
+							<p class="plat__info">Et ses copeaux de truffe noire</p>
+							<p class="plat__prix">35€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
 
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Foie gras de canard mi-cuit
-                    </h4>
-                    <p class="plat__info">
-                        Et ses copeaux de truffe noire
-                    </p>
-                    <p class="plat__prix">
-                        35€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Oeuf au plat</h4>
+							<p class="plat__info">Assaisonné à la truffe sur lit de caviar</p>
+							<p class="plat__prix">20€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
+				</section>
+				<!-- Menu de plats -->
+				<section class="type-plat">
+					<h3 class="type-plat__name">Plats</h3>
+					<div class="type-plat__underline"></div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Filet de boeuf aux herbes</h4>
+							<p class="plat__info">accompagné de sa ribambelle de légumes</p>
+							<p class="plat__prix">40€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
 
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name ">
-                        Oeuf au plat
-                    </h4>
-                    <p class="plat__info">
-                        Assaisonné à la truffe sur lit de caviar
-                    </p>
-                    <p class="plat__prix">
-                        20€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
-        </section>
-        <!-- Menu de plats -->
-        <section class="type-plat">
-            <h3 class="type-plat__name">
-                Plats
-            </h3>
-            <div class="type-plat__underline"></div>
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Filet de boeuf aux herbes
-                    </h4>
-                    <p class="plat__info">
-                        accompagné de sa ribambelle de légumes
-                    </p>
-                    <p class="plat__prix">
-                        40€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Parmentier de queue de boeuf</h4>
+							<p class="plat__info">A la truffe noire sur sa purée de panais</p>
+							<p class="plat__prix">35€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
 
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Parmentier de queue de boeuf
-                    </h4>
-                    <p class="plat__info">
-                        A la truffe noire sur sa purée de panais
-                    </p>
-                    <p class="plat__prix">
-                        35€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Filet de turbot</h4>
+							<p class="plat__info">Aux agrumes</p>
+							<p class="plat__prix">44€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
+				</section>
+				<!--  Menu des desserts -->
+				<section class="type-plat">
+					<h3 class="type-plat__name">Desserts</h3>
+					<div class="type-plat__underline"></div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Paris-brest</h4>
+							<p class="plat__info">Revisité</p>
+							<p class="plat__prix">18€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
 
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Filet de turbot
-                    </h4>
-                    <p class="plat__info">
-                        Aux agrumes
-                    </p>
-                    <p class="plat__prix">
-                        44€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
-        </section>
-        <!--  Menu des desserts -->
-        <section class="type-plat">
-            <h3 class="type-plat__name">
-                Desserts
-            </h3>
-            <div class="type-plat__underline"></div>
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Paris-brest
-                    </h4>
-                    <p class="plat__info">
-                        Revisité
-                    </p>
-                    <p class="plat__prix">
-                        18€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Macaron au chocolat d'exception</h4>
+							<p class="plat__info">Et glace à la vanille de madagascar</p>
+							<p class="plat__prix">22€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
 
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Macaron au chocolat d'exception
-                    </h4>
-                    <p class="plat__info">
-                        Et glace à la vanille de madagascar
-                    </p>
-                    <p class="plat__prix">
-                        22€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
-
-            <div class="box-plat">
-                <div class="plat">
-                    <h4 class="plat__name">
-                        Mousse au chocolat
-                    </h4>
-                    <p class="plat__info">
-                        Au piment d'espelette et à la truffe noire
-                    </p>
-                    <p class="plat__prix">
-                        23€
-                    </p>
-                </div>
-                <div class="plat__ok">
-                    <i class="far fa-check-circle"></i>
-                </div>
-            </div>
-        </section>
-        <!-- bouton commander -->
-        <a class="btn marg-btn" href="#">Commander</a>
-
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <h2 class="footer__logo">ohmyfood</h2>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fas fa-utensils"></i>
-                    Proposer un restaurant
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-hands-helping"></i>
-                    Devenir partenaire
-                </a>
-            </li>
-            <li>
-                <a href="#"> Mentions légales </a>
-            </li>
-            <li>
-                <a href="mailto:contact@ohmyfood.fr">Contact</a>
-            </li>
-        </ul>
-    </footer>
-
-</body>
-
+					<div class="box-plat">
+						<div class="plat">
+							<h4 class="plat__name">Mousse au chocolat</h4>
+							<p class="plat__info">
+								Au piment d'espelette et à la truffe noire
+							</p>
+							<p class="plat__prix">23€</p>
+						</div>
+						<div class="plat__ok">
+							<i class="far fa-check-circle"></i>
+						</div>
+					</div>
+				</section>
+				<!-- bouton commander -->
+				<a class="btn marg-btn" href="#">Commander</a>
+			</div>
+			<!-- Footer -->
+			<footer class="footer">
+				<h2 class="footer__logo">ohmyfood</h2>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fas fa-utensils"></i>
+							Proposer un restaurant
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-hands-helping"></i>
+							Devenir partenaire
+						</a>
+					</li>
+					<li>
+						<a href="#"> Mentions légales </a>
+					</li>
+					<li>
+						<a href="mailto:contact@ohmyfood.fr">Contact</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</body>
 </html>

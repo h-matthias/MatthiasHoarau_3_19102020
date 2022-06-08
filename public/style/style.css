@@ -13,7 +13,9 @@ a {
   color: initial;
 }
 
-.contener {
+.container {
+  max-width: 1440px;
+  justify-self: center;
   width: 100%;
 }
 
@@ -22,8 +24,9 @@ ol {
 }
 
 body {
-  max-width: 1440px;
-  margin: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 /* Animation du load spinner */
